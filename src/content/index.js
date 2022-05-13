@@ -12,7 +12,7 @@ import Resume from '../assets/Kamyar-Mivehchi-May-2022.pdf'
 import { BsGithub } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoLinkedin } from 'react-icons/io'
-
+import logo from '../assets/personal-logo-512.png'
 
 const content = {
     tagline: 'Full-Stack Software Engineer ',
@@ -21,8 +21,9 @@ const content = {
         desc: ' R&D Analytical Chemist with experience in product development and process improvement. Seeking a web development position in need of an experienced problem solver with great communication skills. Possesses a B.S. in Chemistry and is adaptable, collaborative and motivated to learn. Earning a certificate in Full Stack Web development from the University of California, Irvine to support this career transition '
     },
     nav: {
-        logo: 'Kamyar Mivehchi',
-        logoSmall: 'KM',
+        firstName: 'Kamyar',
+        lastName: 'Mivehchi',
+        logoSmall: `${logo}`,
         logolink: 'home',
         links: [
             { text: 'About Me', link: 'about' },

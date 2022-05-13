@@ -35,8 +35,8 @@ function Navigation() {
                         </div>
                         <Link to='hero' smooth={true} offset={-50}>
 
-                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic ">{content.nav.logo}</h2>
-                            <h1 className="md:hidden btn btn-ghost normal-case text-2xl font-bold ">{content.nav.logoSmall}</h1>
+                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic  text-white ">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
+                            <h2 className="md:hidden btn btn-ghost normal-case font-bold text-2xl mx-2 italic  text-white">K <span className="text-accent ">M</span></h2>
                         </Link>
 
                     </div>
