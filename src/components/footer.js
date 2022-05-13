@@ -29,6 +29,9 @@ const Footer = () => {
                             </Link>
                         )
                     })}
+                    <a className="link link-hover" target='_blank'
+
+                        rel="noopener noreferrer" href='https://gallant-curie-2070df.netlify.app/'> Old Portfolio </a>
 
 
 
