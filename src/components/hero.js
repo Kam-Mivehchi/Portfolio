@@ -39,7 +39,7 @@ const Hero = () => {
                     <h2 className="  font-bold ">{content.tagline}</h2>
                 </Parallax>
 
-            </div>
+            </div >
         </>
 
     )
