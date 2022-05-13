@@ -27,15 +27,17 @@ function Navigation() {
                                     }
                                     return (
                                         <Link to={item.link} smooth={true} offset={-50}>
-                                            <a className="btn btn-ghost w-full font-black">{item.text}</a>
+                                            <div className="btn btn-ghost w-full font-black">{item.text}</div>
                                         </Link>
                                     )
                                 })}
                             </div>
                         </div>
+                        <Link to='hero' smooth={true} offset={-50}>
 
-                        <a className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic ">{content.nav.logo}</a>
-                        <h1 className="md:hidden btn btn-ghost normal-case text-2xl font-bold ">{content.nav.logoSmall}</h1>
+                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic ">{content.nav.logo}</h2>
+                            <h1 className="md:hidden btn btn-ghost normal-case text-2xl font-bold ">{content.nav.logoSmall}</h1>
+                        </Link>
 
                     </div>
                 </div>

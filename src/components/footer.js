@@ -25,7 +25,7 @@ const Footer = () => {
                         return (
 
                             <Link to={items.link} smooth={true} offset={-50}>
-                                <a className="link link-hover">{items.text}</a>
+                                <div className="link link-hover">{items.text}</div>
                             </Link>
                         )
                     })}
@@ -39,7 +39,7 @@ const Footer = () => {
                             return (
 
                                 <a className="btn btn-ghost text-4xl" target='_blank'
-                                    rel="noopener noreferrer">{items.icon} </a>
+                                    rel="noopener noreferrer" href={items.link}>{items.icon} </a>
                             )
                         })}
 

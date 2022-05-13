@@ -19,17 +19,17 @@ const Portfolio = () => {
                         {/* layout for large desktops */}
                         <div className="overflow-hidden  hidden lg:grid lg:grid-cols-2" style={{ minHeight: '90vh' }}>
 
-                            <div className={`${index % 2 == 0 ? '' : 'order-2'} flex flex-col items-center justify-center`}>
-                                <Parallax translateX={index % 2 == 0 ? ['20%', '0%'] : ['-100%', '20%']}
+                            <div className={`${index % 2 === 0 ? '' : 'order-2'} flex flex-col items-center justify-center`}>
+                                <Parallax translateX={index % 2 === 0 ? ['20%', '0%'] : ['-100%', '20%']}
                                     opacity={[1, 0]}
                                     speed={-10}>
-                                    <div className={`flex items-center ${index % 2 == 0 ? 'flex-row' : "flex-row-reverse gap-4"}`}>
+                                    <div className={`flex items-center ${index % 2 === 0 ? 'flex-row' : "flex-row-reverse gap-4"}`}>
 
                                         <h1 className=" text-white lg:text-5xl 2xl:text-6xl font-bold">
                                             {proj.title}
                                         </h1>
 
-                                        <Parallax translateX={index % 2 == 0 ? ['10%', '100%'] : ['10%', '-150%']}
+                                        <Parallax translateX={index % 2 === 0 ? ['10%', '100%'] : ['10%', '-150%']}
                                             speed={0}>
 
                                             <div class="card-actions   text-accent ">
