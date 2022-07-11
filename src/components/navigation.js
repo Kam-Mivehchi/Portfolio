@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll'
 import content from '../content/index';
-import Contact from './contact';
 
 
 function Navigation() {
