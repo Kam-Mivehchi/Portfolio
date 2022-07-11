@@ -8,7 +8,7 @@ import workoutGIF from '../assets/WokoutWiz.gif';
 import weatherGIF from '../assets/weatherDash.gif';
 import bangerGIF from '../assets/bangeralert.gif'
 import Type2GIF from '../assets/TypeScripts.gif'
-import Resume from '../assets/Kamyar-Mivehchi-May-2022.pdf'
+import Resume from '../assets/Kamyar-Mivehchi-July-2022.pdf'
 import { BsGithub } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoLinkedin } from 'react-icons/io'
