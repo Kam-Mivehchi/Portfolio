@@ -1,5 +1,8 @@
 # React-Portfolio
 
+![Parallax Portfolio Walkthrough](https://user-images.githubusercontent.com/90432404/178342065-5c3fd31c-d487-4b32-a731-face0bd545b0.gif)
+
+
 ## Table of Contents
 [Description](#Description)
  <br>
@@ -27,12 +30,9 @@
    
  ## Screenshots
 
-
-
 ![image](https://user-images.githubusercontent.com/90432404/178338648-ab0df6b9-4c1f-4b48-bbc4-a30080dcb151.png)
 
 ![image](https://user-images.githubusercontent.com/90432404/178338714-7263c918-8aac-4e42-9042-7a4d0dbe3504.png)
-
 
 ## License 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
