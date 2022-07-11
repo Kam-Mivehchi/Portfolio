@@ -1,4 +1,4 @@
-# React-Portfolio
+# Personal Portfolio
 
 
 ![Parallax Portfolio Walkthrough](https://user-images.githubusercontent.com/90432404/178342065-5c3fd31c-d487-4b32-a731-face0bd545b0.gif)
