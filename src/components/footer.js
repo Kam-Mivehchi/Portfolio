@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="grid grid-flow-col gap-4 text-accent/50">
-                        {content.footer.externLinks.map(items => {
+                        {content.footer.externalLinks.map(items => {
                             return (
 
                                 <a className="btn btn-ghost text-4xl" target='_blank'

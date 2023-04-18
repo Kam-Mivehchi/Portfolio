@@ -10,7 +10,7 @@ const About = () => {
             <div className=" mx-auto  flex flex-col items-center pt-6 pb-14 gap-4 lg:flex-row lg:flex-wrap lg:justify-center ">
                 {/* <Parallax speed={20} translateX={["70%", '20%',]} opacity={[3, -1]} >
                 </Parallax> */}
-                <h1 className='text-6xl lg:text-8xl  font-bold   text-teal-600  lg:basis-full text-center'>About</h1>
+                <h1 className='text-6xl lg:text-8xl  font-bold   text-teal-500  lg:basis-full text-center'>About</h1>
                 {/* <Parallax speed={0} translateX={['25%', '0',]} >
                 </Parallax> */}
                 <div class="avatar lg:basis-1/3  lg:my-6">

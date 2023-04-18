@@ -15,6 +15,7 @@ import Express from "../assets/tech/express.png"
 import { BsGithub } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoLinkedin } from 'react-icons/io'
+import { BiLinkExternal } from 'react-icons/bi'
 
 const content = {
     tagline: 'Full-Stack Software Engineer ',
@@ -37,7 +38,7 @@ const content = {
         ],
     },
     footer: {
-        externLinks:
+        externalLinks:
             [
                 { icon: <IoLogoLinkedin />, link: 'https://www.linkedin.com/in/kamyar-mivehchi/' },
                 { icon: <BsGithub />, link: 'https://github.com/Kam-Mivehchi' },
@@ -92,6 +93,10 @@ const content = {
 
     project: {
         title: 'Projects',
+        icons: {
+            git: <BsGithub />,
+            production: <BiLinkExternal />
+        },
         data: [
             {
                 //use this desc size as template no longer
