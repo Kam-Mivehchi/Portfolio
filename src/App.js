@@ -6,14 +6,14 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-    <ParallaxProvider>
+    // <ParallaxProvider>
+    //   </ParallaxProvider>
 
-      <div className="font-['Lato'] bg-fixed min-h-screen bg-gradient-to-r from-black via-gray-900 to-gray-900 " >
-        <Navigation />
-        <Home />
-        <Footer />
-      </div>
-    </ParallaxProvider>
+    <div className=" bg-fixed min-h-screen bg-gradient-to-r from-black via-gray-900 to-gray-900 max-w-screen overflow-hidden" >
+      <Navigation />
+      <Home />
+      <Footer />
+    </div>
   );
 }
 
