@@ -13,23 +13,31 @@ const Hero = () => {
 
                 <div className="hero-content text-center text-neutral-content  ">
 
-                    <div className="max-w-md">
+                    <div className="flex flex-col gap-4">
 
-                        <h1 className="text-7xl  text-stone-300/1 opacity-100 ">Kamyar Mivehchi</h1>
+                        <h1 className="text-7xl font-bold text-stone-300/1 opacity-100 ">Kamyar <span className="text-teal-500">Mivehchi</span></h1>
 
 
-                        <Link to="about" smooth={true} offset={-50} >
-                            <button className="btn btn-outline  btn-accent animate-pulse hover:transition-colors  ease-in-out  hover:bg-gradient-to-b from-accent via-teal-600 to-accent  hover:scale-110 duration-900 text-lg  px-20 border-2 font-bold" >Explore</button>
-                        </Link>
+                        <div className="flex flex-col gap-2 justify-center">
+                            <h2 className="  font-bold   lg:text-xl">{content.tagline}</h2>
+                            <h2 className="  font-bold lg:text-xl">{content.tagline2}</h2>
+                        </div>
+                        <div className="flex flex-col gap-4 lg:flex-row">
 
+
+                            <Link to="portfolio" smooth={true} offset={-50} >
+                                <button className="btn btn-outline btn-accent    hover:bg-gradient-to-bl hover:from-accent hover:via-white hover:to-accent  hover:scale-105 transition-all duration-500 text-lg  px-20 border-2 font-bold ease-in" >Contact</button>
+                            </Link>
+                            <Link to="portfolio" smooth={true} offset={-50} >
+                                <button className="btn   btn-accent animate-pulse     hover:scale-105  text-lg  px-20 border-2 font-bold hover:bg-gradient-to-tl hover:from-accent hover:via-white hover:to-accent hover:animate-none transition-all duration-500 ease-in" > Projects</button>
+                            </Link>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-                <h2 className="  font-bold ">{content.tagline2}</h2>
-                <h2 className=" text-sm font-bold px-auto opacity-50"><BsXDiamond /></h2>
-                <h2 className="  font-bold ">{content.tagline}</h2>
 
             </div >
         </>

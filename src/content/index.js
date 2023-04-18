@@ -18,7 +18,7 @@ import { IoLogoLinkedin } from 'react-icons/io'
 
 const content = {
     tagline: 'Full-Stack Software Engineer ',
-    tagline2: 'Front-End Web Developer ',
+    tagline2: 'Research Chemist ',
     about: {
         image: { url: `${headshot}`, alt: "Headshot with trees in the background" },
         desc: ' R&D Analytical Chemist with experience in product development and process improvement. Seeking a web development position in need of an experienced problem solver with great communication skills. Possesses a B.S. in Chemistry and is adaptable, collaborative and motivated to learn. Earning a certificate in Full Stack Web development from the University of California, Irvine to support this career transition '

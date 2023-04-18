@@ -19,7 +19,7 @@ const About = () => {
                         <img src={content.about.image.url} alt={content.about.image.alt} className="" />
                     </div>
                 </div>
-                <p className="text-center lg:text-left text-sm md:text-xl  2xl:text-4xl lg:basis-1/2 w-10/12 lg:w-full relative before:content-[''] before:absolute before:bg-teal-500 before:w-full before:h-2 before:left-0 before:top-[-.75rem]    lg:before:h-[120%] lg:before:w-2 lg:before:left-[-1.5rem] lg:before:top-0 xl:before:left-[-2rem]  xl:before:w-4">{content.about.desc}</p>
+                <p className="text-center lg:text-left text-sm md:text-xl  2xl:text-4xl lg:basis-1/2 w-10/12 lg:w-full relative before:content-[''] before:absolute before:bg-teal-500 before:w-full before:h-1 before:left-0 before:top-[-.75rem]    lg:before:h-[120%] lg:before:w-1 lg:before:left-[-1.5rem] lg:before:top-0 xl:before:left-[-2rem]  xl:before:w-2">{content.about.desc}</p>
             </div>
         </div >
     )
