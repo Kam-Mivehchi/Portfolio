@@ -72,7 +72,15 @@ select {
   }
 }
 
-.project-template-container {
+.project-template-desktop {
+
+  grid-template-areas:
+    "a a ."
+    "a a ."
+    ". b c";
+}
+
+.project-template-mobile {
 
   grid-template-areas:
     "a a ."

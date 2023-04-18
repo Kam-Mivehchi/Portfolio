@@ -49,8 +49,8 @@ const content = {
             email: 'kammivehchi@gmail.com',
             location: "Anaheim, CA | Mclean, VA",
         },
-        copyright: 'Copyright © 2022 - Kamyar Mivehchi',
-        tagline: "Next Level Development"
+        copyright: 'Copyright © 2023 - Kamyar Mivehchi',
+        tagline: "Kamyar Mivehchi"
     }
     ,
     header: {
