@@ -71,3 +71,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.project-template-container {
+
+  grid-template-areas:
+    "a a ."
+    "a a ."
+    ". b c";
+}

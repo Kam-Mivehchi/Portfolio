@@ -14,7 +14,7 @@ const About = () => {
                 {/* <Parallax speed={0} translateX={['25%', '0',]} >
                 </Parallax> */}
                 <div class="avatar lg:basis-1/3  lg:my-6">
-                    <div class="w-48 md:w-72 lg:w-96   mx-auto  rounded-full  mask mask-hexagon">
+                    <div class="w-48 md:w-72    mx-auto  rounded-full  mask mask-hexagon">
 
                         <img src={content.about.image.url} alt={content.about.image.alt} className="" />
                     </div>
