@@ -1,4 +1,6 @@
 
+import headshot from '../assets/me/headshot.jpg'
+import logo from '../assets/logo/personal-logo-512.png'
 import noteGIF from '../assets/projects/NoteTaker.gif';
 import typeGIF from '../assets/projects/typingTest1.gif';
 import workoutGIF from '../assets/projects/WorkoutWiz.gif';
@@ -13,12 +15,12 @@ import Express from "../assets/tech/express.png"
 import { BsGithub } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoLinkedin } from 'react-icons/io'
-import logo from '../assets/logo/personal-logo-512.png'
 
 const content = {
     tagline: 'Full-Stack Software Engineer ',
     tagline2: 'Front-End Web Developer ',
     about: {
+        image: { url: `${headshot}`, alt: "Headshot with trees in the background" },
         desc: ' R&D Analytical Chemist with experience in product development and process improvement. Seeking a web development position in need of an experienced problem solver with great communication skills. Possesses a B.S. in Chemistry and is adaptable, collaborative and motivated to learn. Earning a certificate in Full Stack Web development from the University of California, Irvine to support this career transition '
     },
     nav: {
