@@ -7,7 +7,7 @@ function Navigation() {
 
     return (
         <>
-            <div className="bg-fixed    text-white bg-cover sticky top-0 z-50 drop-shadow-2xl w-full bg-gradient-to-r from-black via-gray-900 to-gray-900 "  >
+            <div className="bg-fixed text-white bg-cover sticky top-0 z-50 drop-shadow-2xl w-full bg-gradient-to-r from-black via-gray-900 to-gray-900 "  >
 
                 <div className="navbar     ">
                     <div className="navbar ">
@@ -36,8 +36,8 @@ function Navigation() {
                         </div>
                         <Link to='hero' smooth={true} offset={-50}>
 
-                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic  text-white ">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
-                            <h2 className="md:hidden btn btn-ghost normal-case font-bold text-2xl mx-2 italic  text-white">K <span className="text-accent ">M</span></h2>
+                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic  text-white font-['YellowTail'] ">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
+                            <h2 className="md:hidden btn btn-ghost normal-case font-bold text-2xl mx-2 italic  text-white font-['YellowTail']">K <span className="text-accent ">M</span></h2>
                         </Link>
 
                     </div>

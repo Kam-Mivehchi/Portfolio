@@ -1,18 +1,19 @@
 
-import Mongo from '../assets/mongo.png'
-import Node from '../assets/node.png'
-import Express from "../assets/express.png"
-import noteGIF from '../assets/NoteTaker.gif';
-import typeGIF from '../assets/typing-demo (1).gif';
-import workoutGIF from '../assets/WokoutWiz.gif';
-import weatherGIF from '../assets/weatherDash.gif';
-import bangerGIF from '../assets/bangeralert.gif'
-import Type2GIF from '../assets/TypeScripts.gif'
-import Resume from '../assets/Kamyar-Mivehchi-July-2022.pdf'
+import noteGIF from '../assets/projects/NoteTaker.gif';
+import typeGIF from '../assets/projects/typingTest1.gif';
+import workoutGIF from '../assets/projects/WorkoutWiz.gif';
+import weatherGIF from '../assets/projects/weatherDash.gif';
+import bangerGIF from '../assets/projects/bangeralert.gif'
+import Type2GIF from '../assets/projects/TypeScripts.gif'
+import collectURL from '../assets/projects/collectURL.gif'
+import Resume from '../assets/resume/Kamyar_Mivehchi_Developer_Resume.pdf'
+import Mongo from '../assets/tech/mongo.png'
+import Node from '../assets/tech/node.png'
+import Express from "../assets/tech/express.png"
 import { BsGithub } from 'react-icons/bs'
 import { HiOutlineMail } from 'react-icons/hi'
 import { IoLogoLinkedin } from 'react-icons/io'
-import logo from '../assets/personal-logo-512.png'
+import logo from '../assets/logo/personal-logo-512.png'
 
 const content = {
     tagline: 'Full-Stack Software Engineer ',
@@ -90,6 +91,15 @@ const content = {
     project: {
         title: 'Projects',
         data: [
+            {
+                //use this desc size as template no longer
+                title: 'CollectURL',
+                img: `${collectURL}`,
+                git: 'https://github.com/Kam-Mivehchi/CollectURL',
+                live: 'https://lovely-banoffee-8811b7.netlify.app/',
+                desc: "Designed to collect websites and group them together into a single buckets. Inspired by my journey as a software developer, which relies on learning concepts from various sources. This tool allows online learners to easily keep track of related websites and create lists to reference later.",
+                tech: ["React", "JavaScript", 'Styled-Components', 'CSS', 'Express', 'MongoDB', 'Mongoose', 'Axios', '3rd Party API'],
+            },
             {
                 //use this desc size as template no longer
                 title: 'Type{Scripts} 2.0',

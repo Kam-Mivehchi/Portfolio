@@ -15,10 +15,10 @@ const Hero = () => {
                 <div className="hero-content text-center text-neutral-content  ">
 
                     <div className="max-w-md">
-
                         <Parallax speed={-100} opacity={[7, -5]}>
                             <h1 className=" font-['YellowTail'] text-7xl font-bold text-stone-300/1 opacity-100">Kamyar Mivehchi</h1>
                         </Parallax>
+
 
                         <Parallax opacity={[3, -2]}>
                             <Parallax speed={10} >
