@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <>
             <footer className="footer footer-center py-10 bg-black  text-white font-bold rounded z-100 text-base ">
-                <h1 className="text-6xl text-gray-700">{content.footer.tagline}</h1>
+                <h1 className="text-4xl text-gray-700">{content.footer.tagline}</h1>
                 <div className="grid grid-flow-col gap-max">
                     {content.nav.links.map(items => {
                         if (items.text === "Resume") {

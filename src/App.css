@@ -71,3 +71,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.project-template-desktop {
+
+  grid-template-areas:
+    "a a ."
+    "a a ."
+    ". b c";
+}
+
+.project-template-mobile {
+
+  grid-template-areas:
+    "a a ."
+    "a a ."
+    ". b c";
+}

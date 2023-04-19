@@ -6,7 +6,7 @@ import content from '../content/index';
 const About = () => {
 
     return (
-        <div className="  bg-fixed  text-white bg-black  bg-center bg-no-repeat bg-cover flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-700   via-black to-gray-700 shadow-xl" >
+        <div className="  bg-fixed  text-white bg-black  bg-center bg-no-repeat bg-cover flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-700   via-black to-gray-700 shadow-xl " >
             <div className=" mx-auto  flex flex-col items-center pt-6 pb-14 gap-4 lg:flex-row lg:flex-wrap lg:justify-center ">
                 {/* <Parallax speed={20} translateX={["70%", '20%',]} opacity={[3, -1]} >
                 </Parallax> */}
@@ -14,7 +14,7 @@ const About = () => {
                 {/* <Parallax speed={0} translateX={['25%', '0',]} >
                 </Parallax> */}
                 <div class="avatar lg:basis-1/3  lg:my-6">
-                    <div class="w-48 md:w-72 lg:w-96   mx-auto  rounded-full  mask mask-hexagon">
+                    <div class="w-48 md:w-72  mx-auto  rounded-full  mask mask-hexagon">
 
                         <img src={content.about.image.url} alt={content.about.image.alt} className="" />
                     </div>

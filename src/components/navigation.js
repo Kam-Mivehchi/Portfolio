@@ -7,7 +7,7 @@ function Navigation() {
 
     return (
         <>
-            <div className="bg-fixed text-white bg-cover sticky top-0 z-50 drop-shadow-2xl w-full bg-gradient-to-r from-black via-gray-900 to-gray-900 "  >
+            <div className="bg-fixed text-white bg-cover sticky top-0 z-10 drop-shadow-2xl w-full bg-gradient-to-r from-black via-gray-900 to-gray-900 "  >
 
                 <div className="navbar     ">
                     <div className="navbar ">

@@ -1,42 +1,77 @@
 import React from 'react'
-import { useState } from 'react'
-const Contact = () => {
-    const [openContact, setOpenContact] = useState(false)
+import { useState, useRef } from 'react'
+import emailjs from 'emailjs-com'
+import { ImSpinner2 } from 'react-icons/im'
+const Contact = ({ open }) => {
+    const [openContact, setOpenContact] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
+    const form = useRef();
 
+    const sendEmail = async (e) => {
+        e.preventDefault();
+        try {
+            setLoading(true)
+            setError(false)
+
+            const response = await emailjs.sendForm("service_mtc7c6c", "template_ugau5vp", form.current, "1AFKzcDD6oJGfCvL4")
+
+            e.target.reset()
+
+            setTimeout(() => {
+                setLoading(false)
+                setSuccess(true)
+            }, 500)
+        } catch (error) {
+            setLoading(false)
+
+            setError(true)
+            setSuccess(false)
+
+        }
+
+    };
     return (
-        <div className="  ">
-            <section className="text-white  body-font ">
+        <>
+            <button
 
-                <button style={{ zIndex: '999' }}
-                    onClick={() => openContact ? setOpenContact(false) : setOpenContact(true)}
-                    className="btn btn-outline btn-accent fixed  top-3 right-12  hover:transition-colors  ease-in-out  hover:bg-gradient-to-b from-accent via-teal-600 to-accent  hover:scale-110 duration-900 " >
-                    Contact
-                </button>
+                className="btn btn-outline btn-accent hover:bg-gradient-to-bl hover:from-accent hover:via-white hover:to-accent  hover:scale-105 transition-all duration-500 text-lg  px-20 border-2 font-bold ease-in w-min mx-auto" onClick={() => setOpenContact(!openContact)}>
+                Contact
+            </button>
+            <section className="relative  ">
 
-                <div className={`container fixed bottom-5 right-12 mx-auto flex fixed bottom-0 right-0 ${openContact ? "" : 'hidden'} `} style={{ zIndex: '999' }}>
-                    <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0  shadow-md">
 
-                        <button className=" absolute btn hover:btn-accent  right-5 top-2" onClick={() => openContact ? setOpenContact(false) : setOpenContact(true)}>X</button>
+                <form className={`container bottom-0 right-0  mx-auto flex absolute h-max z-10  w-screen ${openContact ? "" : 'hidden'}  `} ref={form} onSubmit={sendEmail}>
+                    <div className="lg:w-1/3 md:w-1/2 bg-white rounded-lg  p-8 flex flex-col md:ml-auto w-full  md:mt-0  shadow-md ">
 
-                        <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Contact Me</h2>
-                        <p className="leading-relaxed mb-5 text-gray-600">Please Leave you a short message and email</p>
-                        <p className="text-sm text-red-500 my-3">Contact Form Currently Unavailable, please email me directly at <a className="text-blue-400 border-b border-blue-400   " href="mailto:kammivehchi@gmail.com">kammivehchi@gmail.com</a></p>
+                        <button className=" absolute btn btn-sm rounded bg-gray-300 text-black border-0 shadow-xl hover:btn-accent  right-5 top-2 w-2 h-2 " onClick={() => setOpenContact(!openContact)}>X</button>
+
+                        <h2 className="text-gray-900 text-lg mb-1 font-bold title-font">Contact Me</h2>
+                        <p className="leading-relaxed mb-5 text-gray-600">Please leave you a name, email,short and a short message.  </p>
+                        <p className={`text-sm text-red-500 ${error ? "block" : "hidden"}`}>Something went wrong, please submit the form again, and if the problem persists email me directly at <a className="text-blue-400 border-b border-blue-400   " href="mailto:kammivehchi@gmail.com">kammivehchi@gmail.com</a></p>
+                        <p className={`text-sm text-success ${success ? "block" : "hidden"}`}>Thank you for submitting you response. I'll be sure to get back to you as soon as possible </p>
+                        <div className="relative mb-4">
+                            <label for="name" className="leading-7 text-sm text-gray-600">Full Name</label>
+                            <input type="text" id="name" name="name" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-xl shadow-black/10" required />
+                        </div>
                         <div className="relative mb-4">
                             <label for="email" className="leading-7 text-sm text-gray-600">Email</label>
-                            <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input type="email" id="email" name="email" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out shadow-xl shadow-black/10" required />
                         </div>
                         <div className="relative mb-4">
                             <label for="message" className="leading-7 text-sm text-gray-600">Message</label>
-                            <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-xl shadow-black/10" required></textarea>
                         </div>
-                        <button className="text-white btn btn-accent border-0 py-2 px-6  hover:bg-gray-900 rounded text-lg  ease-in-out   hover:scale-110 duration-900">Button</button>
-                        <p className="text-sm text-red-500 mt-3">Contact Form Currently Unavailable, please email me directly at <a className="text-blue-400 border-b border-blue-400   " href="mailto:kammivehchi@gmail.com">kammivehchi@gmail.com</a></p>
+                        <button type="submit" className="text-white btn btn-accent border-0 py-2 px-6  hover:bg-gray-900 rounded text-lg  ease-in-out   hover:scale-110 duration-900 shadow-2xl shadow-black/10"><ImSpinner2 className={` animate-spin mx-2 ${loading ? "static" : "hidden"}`} />Submit</button>
+
                     </div>
-                </div>
+                </form>
 
             </section>
+        </>
 
-        </div>
+
     )
 }
 
