@@ -16,15 +16,16 @@ const Footer = () => {
                     {content.nav.links.map(items => {
                         if (items.text === "Resume") {
                             return (
-                                <a className="link link-hover link-accent" target='_blank'
+                                <a key={items.text
+                                } className="link link-hover link-accent" target='_blank'
 
-                                    rel="noopener noreferrer" href={items.link}>{items.text} </a>
+                                    rel="noopener noreferrer" href={items.link} > {items.text} </a>
                             )
                         }
 
                         return (
 
-                            <Link to={items.link} smooth={true} offset={-50}>
+                            <Link key={`${items.text}_footer`} to={items.link} smooth={true} offset={-50}>
                                 <div className="link link-hover link-accent">{items.text}</div>
                             </Link>
                         )
@@ -42,7 +43,7 @@ const Footer = () => {
                             return (
 
                                 <a className="btn btn-ghost text-4xl" target='_blank'
-                                    rel="noopener noreferrer" href={items.link}>{items.icon} </a>
+                                    rel="noopener noreferrer" href={items.link} key={items.link}>{items.icon} </a>
                             )
                         })}
 
@@ -52,7 +53,7 @@ const Footer = () => {
                 <div>
                     <p className="text-base">{content.footer.copyright}</p>
                 </div>
-            </footer>
+            </footer >
         </>
     );
 }

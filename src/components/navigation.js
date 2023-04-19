@@ -6,45 +6,63 @@ function Navigation() {
 
 
     return (
-        <>
-            <div className="bg-fixed text-white bg-cover sticky top-0 z-10 drop-shadow-2xl w-full bg-gradient-to-r from-black via-gray-900 to-gray-900 "  >
 
-                <div className="navbar     ">
-                    <div className="navbar ">
-                        <div className="dropdown ">
+        <div className="navbar bg-transparent md:w-10/12 2xl:w-2/3 mx-auto pt-4 lg:pt-10">
+            <Link to='hero' smooth={true} offset={-50} className="navbar-start">
 
-                            <label tabindex="0" className="btn btn-ghost  ">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                                </svg>
-                            </label>
+                <h2 className=" btn btn-wide flex btn-ghost normal-case text-2xl lg:text-3xl font-bold   text-white  w-max hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
 
-                            <div tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-white text-black rounded-box w-52">
-                                {content.nav.links.map((item, idx) => {
-                                    if (item.text === "Resume") {
-                                        return (
-                                            <a className="btn btn-ghost w-full font-black" target='_blank'
-                                                rel="noopener noreferrer" href={item.link}>{item.text} </a>
-                                        )
-                                    }
-                                    return (
-                                        <Link to={item.link} smooth={true} offset={-50}>
-                                            <div className="btn btn-ghost w-full font-black">{item.text}</div>
-                                        </Link>
-                                    )
-                                })}
-                            </div>
-                        </div>
-                        <Link to='hero' smooth={true} offset={-50}>
+            </Link>
+            <div className="navbar-end">
+                <div className="dropdown  dropdown-end ">
+                    <label tabIndex={0} className="btn btn-ghost lg:hidden text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                    <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
 
-                            <h2 className="btn hidden md:flex btn-ghost normal-case text-2xl font-bold italic  text-white  ">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
-                            <h2 className="md:hidden btn btn-ghost normal-case font-bold text-2xl mx-2 italic  text-white ">K <span className="text-accent ">M</span></h2>
-                        </Link>
+                        {content.nav.links.map((item) => {
+                            if (item.text === "Resume") {
+                                return (
+                                    <a className="btn btn-ghost w-full font-black" target='_blank'
+                                        rel="noopener noreferrer" key={`${item.text}_mobile`} href={item.link}>{item.text} </a>
+                                )
+                            }
+                            return (
+                                <Link to={item.link} key={`${item.text}_mobile`} smooth={true} offset={25}>
+                                    <div className="btn btn-ghost w-full font-black">{item.text}</div>
+                                </Link>
+                            )
+                        })}
 
-                    </div>
+                    </ul>
                 </div>
-            </div >
-            {/* <Contact /> */}
-        </>
+            </div>
+
+            <div className="navbar-center hidden lg:flex text-white ">
+                <ul className="menu menu-horizontal px-1 ">
+                    {content.nav.links.map((item) => {
+                        if (item.text === "Resume") {
+                            return (
+                                <a className="btn btn-ghost w-max font-black text-xl hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" target='_blank'
+                                    rel="noopener noreferrer" key={`${item.text}_desktop`} href={item.link}>{item.text} </a>
+                            )
+                        }
+                        return (
+                            <Link to={item.link} key={`${item.text}_desktop`} smooth={true} offset={25}>
+
+                                <button className="btn btn-ghost w-max font-black text-xl  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">{item.text}</button>
+                            </Link>
+                        )
+                    })}
+
+                </ul>
+            </div>
+
+        </div>
+
+
     )
 
 }

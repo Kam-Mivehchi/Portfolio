@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import React from 'react'
 import { Link } from 'react-scroll'
 import content from '../content';
@@ -29,7 +29,7 @@ const Hero = () => {
 
 
                             <Link to="portfolio" smooth={true} offset={-50} >
-                                <button className="btn   btn-accent animate-pulse     hover:scale-105  text-lg  px-20 border-2 font-bold hover:bg-gradient-to-tl hover:from-accent hover:via-white hover:to-accent hover:animate-none transition-all duration-500 ease-in" > Projects</button>
+                                <button className="btn   btn-accent animate-pulse     hover:scale-105  text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" > Projects</button>
                             </Link>
 
                             {/* contact button and popup */}
