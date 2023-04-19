@@ -6,7 +6,7 @@ import content from '../content/index';
 const About = () => {
 
     return (
-        <div className="  bg-fixed  text-white bg-black  bg-center bg-no-repeat bg-cover flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-700   via-black to-gray-700 shadow-xl" >
+        <div className="  bg-fixed  text-white bg-black  bg-center bg-no-repeat bg-cover flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-700   via-black to-gray-700 shadow-xl " >
             <div className=" mx-auto  flex flex-col items-center pt-6 pb-14 gap-4 lg:flex-row lg:flex-wrap lg:justify-center ">
                 {/* <Parallax speed={20} translateX={["70%", '20%',]} opacity={[3, -1]} >
                 </Parallax> */}
