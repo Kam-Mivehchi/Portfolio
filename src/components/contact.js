@@ -58,7 +58,7 @@ const Contact = ({ openContact, setOpenContact }) => {
                             <label htmlFor="message" className="leading-7 text-sm text-gray-600">Message</label>
                             <textarea id="message" name="message" className="w-full bg-white rounded border border-gray-300 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out shadow-xl shadow-black/10" required></textarea>
                         </div>
-                        <button type="submit" className="text-white btn btn-accent border-0 py-2 px-6  hover:bg-gray-900 rounded text-lg  ease-in-out   hover:scale-110 duration-900 shadow-2xl shadow-black/10"><ImSpinner2 className={` animate-spin mx-2 ${loading ? "static" : "hidden"}`} />Submit</button>
+                        <button type="submit" className="text-white btn btn-accent border-0 py-2 px-6  hover:bg-gray-900 rounded text-lg  ease-in-out   hover:scale-110 duration-900 shadow-2xl shadow-black/10 w-1/2 mx-auto"><ImSpinner2 className={` animate-spin mx-2 ${loading ? "static" : "hidden"}`} />Submit</button>
 
                     </div>
                 </form>
