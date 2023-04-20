@@ -2,8 +2,7 @@ import React from 'react'
 import { useState, useRef } from 'react'
 import emailjs from 'emailjs-com'
 import { ImSpinner2 } from 'react-icons/im'
-const Contact = ({ open }) => {
-    const [openContact, setOpenContact] = useState(false);
+const Contact = ({ openContact, setOpenContact }) => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState(false);
     const [error, setError] = useState(false);
@@ -34,18 +33,14 @@ const Contact = ({ open }) => {
     };
     return (
         <>
-            <button
-
-                className="btn btn-outline btn-accent hover:bg-gradient-to-l hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95   transition-all duration-300 text-lg  px-20 border-2 font-bold ease-in-out w-min mx-auto " onClick={() => setOpenContact(!openContact)}>
-                Contact
-            </button>
-            <section className="absolute  top-1/2 translate-y-[-50%] left-11/12 translate-x-[2%] lg:left-[-17%] ">
+            {/* absolute  top-1/2 translate-y-[-50%] left-11/12 translate-x-[2%] lg:left-[-17%] */}
+            <section className="absolute top-1/2 left-1/2   translate-y-[-50%]  translate-x-[-50%] w-[95%]">
 
 
-                <form className={`container relative    w-11/12 lg:w-screen ${openContact ? "" : 'hidden'}  `} ref={form} onSubmit={sendEmail}>
-                    <div className="lg:w-1/2  bg-white rounded-lg  p-8 flex flex-col md:ml-auto w-full  md:mt-0  shadow-md ">
-
+                <form className={`container     w-11/12 lg:w-screen ${openContact ? "" : 'hidden'}  mx-auto`} ref={form} onSubmit={sendEmail}>
+                    <div className="lg:w-1/2  bg-white rounded-lg  p-8 flex flex-col md:ml-auto w-full  md:mt-0  shadow-md  mx-auto relative">
                         <button className=" absolute btn btn-sm rounded bg-gray-300 text-black border-0 shadow-xl hover:btn-accent  right-5 top-2 w-2 h-2 " onClick={() => setOpenContact(!openContact)}>X</button>
+
 
                         <h2 className="text-gray-900 text-lg mb-1 font-bold title-font">Contact Me</h2>
                         <p className="leading-relaxed mb-5 text-gray-600">Please leave you a name, email,short and a short message.  </p>

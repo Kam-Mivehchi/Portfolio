@@ -1,21 +1,21 @@
-
-import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-scroll'
 import content from '../content';
 
 import Contact from './contact'
 
 const Hero = () => {
+    const [openContact, setOpenContact] = useState(false);
 
 
 
     return (
         <>
-            <div className="hero min-h-screen text-white overflow-hidden shadow-none relative" >
+            <div className="hero min-h-screen text-white overflow-hidden shadow-none relative " >
 
-                <div className="hero-content text-center text-neutral-content  ">
+                <div className="hero-content text-center text-neutral-content relative ">
 
-                    <div className="flex flex-col gap-4">
+                    <div className="flex flex-col gap-4 ">
 
                         <h1 className="text-7xl font-bold text-stone-300/1 opacity-100 ">Kamyar <span className="text-teal-500">Mivehchi</span></h1>
 
@@ -33,13 +33,18 @@ const Hero = () => {
                             </Link>
 
                             {/* contact button and popup */}
-                            <Contact />
+                            <button
+
+                                className="btn btn-outline btn-accent hover:bg-gradient-to-l hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95   transition-all duration-300 text-lg  px-20 border-2 font-bold ease-in-out w-min mx-auto " onClick={() => setOpenContact(!openContact)}>
+                                Contact
+                            </button>
 
                         </div>
 
                     </div>
 
                 </div>
+                <Contact openContact={openContact} setOpenContact={setOpenContact} />
 
 
             </div >
