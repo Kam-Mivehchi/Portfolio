@@ -31,7 +31,7 @@ const content = {
         logolink: 'home',
         links: [
             { text: 'About Me', link: 'about' },
-            { text: 'My Work', link: 'portfolio' },
+            { text: 'Portfolio', link: 'portfolio' },
             { text: 'Resume', link: `${Resume}` },
             // { text: 'Skills', link: 'skills' },
             // { text: 'Contact', link: 'contact' },
