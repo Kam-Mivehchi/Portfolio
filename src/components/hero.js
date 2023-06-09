@@ -27,10 +27,12 @@ const Hero = () => {
                         <div className="flex flex-col gap-4 lg:flex-row">
 
 
-
                             <Link to="portfolio" smooth={true} offset={-50} duration={100} delay={0}>
-                                <button className="btn   btn-accent animate-pulse     hover:scale-105  text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out" > Projects</button>
+                                <button className="btn   btn-accent text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-1000 ease-in-out" > Projects</button>
                             </Link>
+                            <a href="https://calendly.com/kammivehchi/tutoring-web-development">
+                                <button className="btn   btn-primary animate-pulse   text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-1000 ease-in-out " >Tutoring</button>
+                            </a>
 
                             {/* contact button and popup */}
                             <button
