@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-scroll'
 import content from '../content';
-
+import Spline from '@splinetool/react-spline';
 import Contact from './contact'
 
 const Hero = () => {
@@ -11,7 +11,9 @@ const Hero = () => {
 
     return (
         <>
+
             <div className="hero min-h-screen text-white overflow-hidden shadow-none relative " >
+                <Spline scene="https://prod.spline.design/CBQ7gasxIh7OmHOb/scene.splinecode" className=" absolute top-[-23%]  lg:top-[-10%] scale-50 lg:scale-75 h-1/2 xl:scale-150 xl:top-[0%]" />
 
                 <div className="hero-content text-center text-neutral-content relative ">
 
