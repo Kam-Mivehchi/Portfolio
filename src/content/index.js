@@ -4,7 +4,7 @@ import logo from '../assets/logo/personal-logo-512.png'
 import noteGIF from '../assets/projects/NoteTaker.gif';
 import typeGIF from '../assets/projects/typingTest1.gif';
 import workoutGIF from '../assets/projects/WorkoutWiz.gif';
-import weatherGIF from '../assets/projects/weatherDash.gif';
+import weatherGIF from '../assets/projects/weather_dashboard.gif';
 import bangerGIF from '../assets/projects/bangeralert.gif'
 import Type2GIF from '../assets/projects/TypeScripts.gif'
 import collectURL from '../assets/projects/collectURL.gif'
@@ -117,6 +117,14 @@ const content = {
                 tech: ["React", "JavaScript ", 'TailwindCSS', 'CSS', 'Express', 'mySQL', 'Axios'],
             },
             {
+                title: 'Weather Buddy',
+                img: `${weatherGIF}`,
+                git: 'https://github.com/Kam-Mivehchi/Weather-Dashboard',
+                live: 'https://kam-mivehchi.github.io/Weather-Dashboard/',
+                desc: "Weather Dashboard is a sleek and responsive solution to recive weather information from around the world. This application allows user input(string input or button preset) to change the forecast to reflect their desired location.Weather data is updated dynamically with the use of Open Weather API and JavaScript.",
+                tech: ["JavaScript", "HTML", 'CSS', "Bootstrap 5", "DayJS", "Open Weather API"],
+            },
+            {
                 title: 'BangerAlert',
                 img: `${bangerGIF}`,
                 git: 'https://github.com/Kam-Mivehchi/BangerAlert---Spotify-Companion',
@@ -138,14 +146,6 @@ const content = {
                 git: 'https://github.com/Kam-Mivehchi/project-1',
                 live: 'https://runaariga.github.io/project-1/',
                 desc: "Application where the user is able to find a workout specifically to certain muscle groups.If the user selects a muscle group, application will provide a list of workouts and videos",
-                tech: ["JavaScript", "HTML", 'CSS'],
-            },
-            {
-                title: 'Weather App',
-                img: `${weatherGIF}`,
-                git: 'https://github.com/Kam-Mivehchi/Weather-Dashboard',
-                live: 'https://kam-mivehchi.github.io/Weather-Dashboard/',
-                desc: "Weather Dashboard is a sleek and responsive solution to recive weather information from around the world.This application allows user input(string input or button preset) to change the forecast to reflect their desired location.Weather data is updated dynamically with the use of Open Weather API and JavaScript.",
                 tech: ["JavaScript", "HTML", 'CSS'],
             },
             {
