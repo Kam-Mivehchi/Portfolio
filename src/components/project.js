@@ -11,20 +11,18 @@ function Project({ proj, index, total }) {
          <h1 className={`text-white text-4xl font-bold lg:row-start-1 mx-auto lg:mx-0  ${index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-2"}`}>{proj.title}</h1>
          {/* site/repo links */}
          <div className={`card-actions text-white mx-auto lg:mx-0 ${index % 2 === 0 ? "lg:col-start-1" : "lg:col-start-2"}`} >
-            <button className="btn btn-xs lg:btn-sm btn-accent  hover:bg-gradient-to-r hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out ">
-               <a href={proj.git} target='_blank' className='flex gap-1' rel="noopener noreferrer">
-                  <p>
-                     Github Repo
-                  </p>
-                  {content.project.icons.git}
-               </a>
-            </button>
-            <button className="btn btn-xs lg:btn-sm btn-accent  hover:bg-gradient-to-l hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">
-               <a href={proj.live} target='_blank' className='flex gap-1' rel="noopener noreferrer">
-                  <p>Deployed Site </p>
-                  {content.project.icons.production}
-               </a>
-            </button>
+            <a href={proj.git} target='_blank' className='flex gap-1 btn btn-xs lg:btn-sm btn-accent  hover:bg-gradient-to-r hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out ' rel="noopener noreferrer">
+               <p>
+                  Github Repo
+               </p>
+               {content.project.icons.git}
+            </a>
+
+            <a href={proj.live} target='_blank' className='flex gap-1 btn btn-xs lg:btn-sm btn-accent  hover:bg-gradient-to-l hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out' rel="noopener noreferrer">
+               <p>Deployed Site </p>
+               {content.project.icons.production}
+            </a>
+
          </div>
          {/* image/gif */}
          <div className={`lg:row-span-5  lg:row-start-1   ${index % 2 === 0 ? " lg:col-start-2" : " lg:col-start-1"} 
