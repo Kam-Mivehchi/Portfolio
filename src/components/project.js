@@ -27,7 +27,7 @@ function Project({ proj, index, total }) {
             </button>
          </div>
          {/* image/gif */}
-         <div className={`lg:row-span-5 lg:row-start-1 lg:row-start-1   ${index % 2 === 0 ? " lg:col-start-2" : " lg:col-start-1"} 
+         <div className={`lg:row-span-5  lg:row-start-1   ${index % 2 === 0 ? " lg:col-start-2" : " lg:col-start-1"} 
          `} >
             <div className=" border-2 border-white mx-auto rounded-xl overflow-hidden shadow-2xl shadow-white/30">
 
