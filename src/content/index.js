@@ -104,7 +104,7 @@ const content = {
                 title: 'Westmont House',
                 img: `${westmontGIF}`,
                 git: 'https://github.com/Kam-Mivehchi/Westmont-House',
-                live: 'https:/westmonthouse.com',
+                live: 'https://westmonthouse.com',
                 desc: "Responsive web application built for Westmont House, an assited living facility in Mclean, Virginia. Improved page performance by 15% and established a CI/CD pipeline for future changes",
                 tech: ['Next.js', 'Styled-Components', 'SASS', 'EmailJS', 'JavaScript',],
             },
