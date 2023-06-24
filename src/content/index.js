@@ -1,10 +1,11 @@
 
 import headshot from '../assets/me/headshot.jpg'
 import logo from '../assets/logo/personal-logo-512.png'
-import noteGIF from '../assets/projects/NoteTaker.gif';
-import typeGIF from '../assets/projects/typingTest1.gif';
+// import noteGIF from '../assets/projects/NoteTaker.gif';
+// import typeGIF from '../assets/projects/typingTest1.gif';
 import workoutGIF from '../assets/projects/WorkoutWiz.gif';
 import weatherGIF from '../assets/projects/weather_dashboard.gif';
+import westmontGIF from '../assets/projects/westmont_house.gif';
 import bangerGIF from '../assets/projects/bangeralert.gif'
 import Type2GIF from '../assets/projects/TypeScripts.gif'
 import collectURL from '../assets/projects/collectURL.gif'
@@ -100,6 +101,15 @@ const content = {
         data: [
             {
                 //use this desc size as template no longer
+                title: 'Westmont House',
+                img: `${westmontGIF}`,
+                git: 'https://github.com/Kam-Mivehchi/Westmont-House',
+                live: 'https:/westmonthouse.com',
+                desc: "Responsive web application built for Westmont House, an assited living facility in Mclean, Virginia. Improved page performance by 15% and established a CI/CD pipeline for future changes",
+                tech: ['Next.js', 'Styled-Components', 'SASS', 'EmailJS', 'JavaScript',],
+            },
+            {
+                //use this desc size as template no longer
                 title: 'CollectURL',
                 img: `${collectURL}`,
                 git: 'https://github.com/Kam-Mivehchi/CollectURL',
@@ -114,15 +124,15 @@ const content = {
                 git: 'https://github.com/Kam-Mivehchi/TypeScripts2-FrontEnd',
                 live: 'https://typescripts-react.herokuapp.com/',
                 desc: "TypeScripts 2.0 is a typing game for all developers, new and experienced alike where users are able to see their typing skills. TypeScripts 2.0 features a refactored React front-end connected to the original database",
-                tech: ["React", "JavaScript ", 'TailwindCSS', 'CSS', 'Express', 'mySQL', 'Axios'],
+                tech: ["React", "JavaScript ", 'TailwindCSS', 'CSS', 'Express', 'MySQL', 'Axios'],
             },
             {
                 title: 'Weather Buddy',
                 img: `${weatherGIF}`,
                 git: 'https://github.com/Kam-Mivehchi/Weather-Dashboard',
                 live: 'https://kam-mivehchi.github.io/Weather-Dashboard/',
-                desc: "Weather Dashboard is a sleek and responsive solution to recive weather information from around the world. This application allows user input(string input or button preset) to change the forecast to reflect their desired location.Weather data is updated dynamically with the use of Open Weather API and JavaScript.",
-                tech: ["JavaScript", "HTML", 'CSS', "Bootstrap 5", "DayJS", "Open Weather API"],
+                desc: "Weather Dashboard is a sleek and responsive solution to recive weather information from around the world. This application allows user input(string input or button preset) to change the forecast to reflect their desired location. Weather data is updated dynamically with the use of Open Weather API and JavaScript.",
+                tech: ["JavaScript", "HTML", 'CSS', "Local Storage", "Bootstrap 5", "DayJS", "Open Weather API"],
             },
             {
                 title: 'BangerAlert',
@@ -132,14 +142,14 @@ const content = {
                 desc: "BangerAlert is a Spotify Companion App that hosts a new wrapper and displays lyrics to sing along with. The application uses the Spotify API to provide a simple interface to enhance the listening experience.",
                 tech: ["React", "JavaScript ", 'Bootstrap', 'CSS', 'Express', 'Spotify Web API'],
             },
-            {
-                title: 'Type{Scripts}',
-                img: `${typeGIF}`,
-                git: 'https://github.com/Kam-Mivehchi/TypeScripts',
-                live: 'https://typescripts-btc.herokuapp.com/',
-                desc: "Type{Scripts} is a typing game for all developers, new and experienced alike where users are able to see their typing skills when typing code.We noticed that a lot of the typing quizes or games didn't offer developer modes where you can type code instead of randomwords and sentences and sought to provide a solution in the form of Typescripts. ",
-                tech: ["JavaScript", "Handlebars", 'CSS', 'Bootstrap'],
-            },
+            // {
+            //     title: 'Type{Scripts}',
+            //     img: `${typeGIF}`,
+            //     git: 'https://github.com/Kam-Mivehchi/TypeScripts',
+            //     live: 'https://typescripts-btc.herokuapp.com/',
+            //     desc: "Type{Scripts} is a typing game for all developers, new and experienced alike where users are able to see their typing skills when typing code.We noticed that a lot of the typing quizes or games didn't offer developer modes where you can type code instead of randomwords and sentences and sought to provide a solution in the form of Typescripts. ",
+            //     tech: ["JavaScript", "Handlebars", 'CSS', 'Bootstrap'],
+            // },
             {
                 title: 'Workout Wizard',
                 img: `${workoutGIF}`,
@@ -148,14 +158,14 @@ const content = {
                 desc: "Application where the user is able to find a workout specifically to certain muscle groups.If the user selects a muscle group, application will provide a list of workouts and videos",
                 tech: ["JavaScript", "HTML", 'CSS'],
             },
-            {
-                title: 'Note Taker',
-                img: `${noteGIF}`,
-                git: 'https://github.com/Kam-Mivehchi/Note-Taker',
-                live: 'https://notetaker-km.herokuapp.com/',
-                desc: "Mobile-Resonsive Note taking application that integrates with Rest API. This application allows user to create, store and delete application to help increase productivity",
-                tech: ["JavaScript", "HTML", 'CSS'],
-            }
+            // {
+            //     title: 'Note Taker',
+            //     img: `${noteGIF}`,
+            //     git: 'https://github.com/Kam-Mivehchi/Note-Taker',
+            //     live: 'https://notetaker-km.herokuapp.com/',
+            //     desc: "Mobile-Resonsive Note taking application that integrates with Rest API. This application allows user to create, store and delete application to help increase productivity",
+            //     tech: ["JavaScript", "HTML", 'CSS'],
+            // }
         ]
     },
     resume: {
