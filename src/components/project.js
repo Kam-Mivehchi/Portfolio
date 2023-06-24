@@ -20,7 +20,7 @@ function Project({ proj, index, total }) {
                </a>
             </button>
             <button className="btn btn-xs lg:btn-sm btn-accent  hover:bg-gradient-to-l hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">
-               <a href={proj.git} target='_blank' className='flex gap-1' rel="noopener noreferrer">
+               <a href={proj.live} target='_blank' className='flex gap-1' rel="noopener noreferrer">
                   <p>Deployed Site </p>
                   {content.project.icons.production}
                </a>
