@@ -8,6 +8,7 @@ import weatherGIF from '../assets/projects/weather_dashboard.gif';
 import westmontGIF from '../assets/projects/westmont_house.gif';
 import bangerGIF from '../assets/projects/bangeralert.gif'
 import Type2GIF from '../assets/projects/TypeScripts.gif'
+import quickChatGIF from '../assets/projects/QuickChat.gif'
 import collectURL from '../assets/projects/collectURL.gif'
 import Resume from '../assets/resume/Kamyar_Mivehchi_Developer_Resume.pdf'
 import Mongo from '../assets/tech/mongo.png'
@@ -107,6 +108,15 @@ const content = {
                 live: 'https://westmonthouse.com',
                 desc: "Responsive web application built for Westmont House, an assited living facility in Mclean, Virginia. Improved page performance by 15% and established a CI/CD pipeline for future changes",
                 tech: ['Next.js', 'Styled-Components', 'SASS', 'EmailJS', 'JavaScript',],
+            },
+            {
+                //use this desc size as template no longer
+                title: 'Quickchat',
+                img: `${quickChatGIF}`,
+                git: 'https://github.com/Kam-Mivehchi/QuickChat',
+                live: 'https://jade-daifuku-25b5fe.netlify.app/',
+                desc: "Real time chat application, designed to connect friends, family, and more",
+                tech: ['Typescript', 'React', 'Node', 'Express', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Vite'],
             },
             {
                 //use this desc size as template no longer
