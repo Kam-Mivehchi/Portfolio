@@ -1,7 +1,7 @@
 
 import content from '../content/index';
 
-import { Link } from 'react-scroll'
+
 
 
 
@@ -25,9 +25,9 @@ const Footer = () => {
 
                         return (
 
-                            <Link key={`${items.text}_footer`} to={items.link} smooth={true} offset={-50}>
+                            <a href={`#${items.link}`} key={`${items.text}_footer`} >
                                 <div className="link link-hover link-accent">{items.text}</div>
-                            </Link>
+                            </a>
                         )
                     })}
                     <a className="link link-hover link-accent" target='_blank'

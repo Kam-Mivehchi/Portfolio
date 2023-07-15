@@ -1,15 +1,15 @@
 
-import headshot from '../assets/me/headshot.jpg'
+// import headshot from '../assets/me/headshot.jpg'
 import logo from '../assets/logo/personal-logo-512.png'
 // import noteGIF from '../assets/projects/NoteTaker.gif';
 // import typeGIF from '../assets/projects/typingTest1.gif';
-import workoutGIF from '../assets/projects/WorkoutWiz.gif';
-import weatherGIF from '../assets/projects/weather_dashboard.gif';
-import westmontGIF from '../assets/projects/westmont_house.gif';
-import bangerGIF from '../assets/projects/bangeralert.gif'
-import Type2GIF from '../assets/projects/TypeScripts.gif'
-import quickChatGIF from '../assets/projects/QuickChat.gif'
-import collectURL from '../assets/projects/collectURL.gif'
+// import workoutGIF from '../assets/projects/WorkoutWiz.gif';
+// import weatherGIF from '../assets/projects/weather_dashboard.gif';
+// import westmontGIF from '../assets/projects/westmont_house.gif';
+// import bangerGIF from '../assets/projects/bangeralert.gif'
+// import Type2GIF from '../assets/projects/TypeScripts.gif'
+// import quickChatGIF from '../assets/projects/QuickChat.gif'
+// import collectURL from '../assets/projects/collectURL.gif'
 import Resume from '../assets/resume/Kamyar_Mivehchi_Developer_Resume.pdf'
 import Mongo from '../assets/tech/mongo.png'
 import Node from '../assets/tech/node.png'
@@ -23,7 +23,7 @@ const content = {
     tagline: 'Full-Stack Software Engineer ',
     tagline2: 'Research Chemist ',
     about: {
-        image: { url: `${headshot}`, alt: "Headshot with trees in the background" },
+        image: { url: `/me/headshot.webp`, alt: "Headshot with trees in the background" },
         desc: ' R&D Analytical Chemist with experience in product development and process improvement. Seeking a web development position in need of an experienced problem solver with great communication skills. Possesses a B.S. in Chemistry and is adaptable, collaborative and motivated to learn. Earning a certificate in Full Stack Web development from the University of California, Irvine to support this career transition '
     },
     nav: {
@@ -102,26 +102,32 @@ const content = {
         data: [
             {
                 //use this desc size as template no longer
+                id: "westmont",
                 title: 'Westmont House',
-                img: `${westmontGIF}`,
+                screenshot: "/screenshots/westmont.webp",
+                video: `/projects/westmont_house.gif`,
                 git: 'https://github.com/Kam-Mivehchi/Westmont-House',
                 live: 'https://westmonthouse.com',
                 desc: "Responsive web application built for Westmont House, an assited living facility in Mclean, Virginia. Improved page performance by 15% and established a CI/CD pipeline for future changes",
                 tech: ['Next.js', 'Styled-Components', 'SASS', 'EmailJS', 'JavaScript',],
             },
             {
-                //use this desc size as template no longer
+
+                id: "quickchat",
                 title: 'Quickchat',
-                img: `${quickChatGIF}`,
+                video: `/projects/QuickChat.gif`,
+                screenshot: "/screenshots/quickchat.webp",
                 git: 'https://github.com/Kam-Mivehchi/QuickChat',
                 live: 'https://jade-daifuku-25b5fe.netlify.app/',
                 desc: "Real time chat application, designed to connect friends, family, and more",
                 tech: ['Typescript', 'React', 'Node', 'Express', 'JavaScript', 'MongoDB', 'TailwindCSS', 'Vite'],
             },
             {
-                //use this desc size as template no longer
+
+                id: 'collectURL',
                 title: 'CollectURL',
-                img: `${collectURL}`,
+                video: `/projects/collectURL.gif`,
+                screenshot: "/screenshots/collectURL.webp",
                 git: 'https://github.com/Kam-Mivehchi/CollectURL',
                 live: 'https://lovely-banoffee-8811b7.netlify.app/',
                 desc: "Designed to collect websites and group them together into a single buckets. Inspired by my journey as a software developer, which relies on learning concepts from various sources. This tool allows online learners to easily keep track of related websites and create lists to reference later.",
@@ -129,24 +135,31 @@ const content = {
             },
             {
                 //use this desc size as template no longer
+                id: 'type2',
                 title: 'Type{Scripts} 2.0',
-                img: `${Type2GIF}`,
+                video: `/projects/TypeScripts.gif`,
+                screenshot: "/screenshots/typescripts.webp",
                 git: 'https://github.com/Kam-Mivehchi/TypeScripts2-FrontEnd',
                 live: 'https://typescripts-react.herokuapp.com/',
                 desc: "TypeScripts 2.0 is a typing game for all developers, new and experienced alike where users are able to see their typing skills. TypeScripts 2.0 features a refactored React front-end connected to the original database",
                 tech: ["React", "JavaScript ", 'TailwindCSS', 'CSS', 'Express', 'MySQL', 'Axios'],
             },
             {
+                id: 'weatherBuddy',
                 title: 'Weather Buddy',
-                img: `${weatherGIF}`,
+                video: `/projects/weather_dashboard.gif`,
+                screenshot: "/screenshots/weather.webp",
                 git: 'https://github.com/Kam-Mivehchi/Weather-Dashboard',
                 live: 'https://kam-mivehchi.github.io/Weather-Dashboard/',
                 desc: "Weather Dashboard is a sleek and responsive solution to recive weather information from around the world. This application allows user input(string input or button preset) to change the forecast to reflect their desired location. Weather data is updated dynamically with the use of Open Weather API and JavaScript.",
                 tech: ["JavaScript", "HTML", 'CSS', "Local Storage", "Bootstrap 5", "DayJS", "Open Weather API"],
             },
             {
+                id: 'bangerAlert',
+
                 title: 'BangerAlert',
-                img: `${bangerGIF}`,
+                video: `/projects/bangeralert.gif`,
+                screenshot: "/screenshots/banger.webp",
                 git: 'https://github.com/Kam-Mivehchi/BangerAlert---Spotify-Companion',
                 live: 'https://banger-alert-redux.herokuapp.com/',
                 desc: "BangerAlert is a Spotify Companion App that hosts a new wrapper and displays lyrics to sing along with. The application uses the Spotify API to provide a simple interface to enhance the listening experience.",
@@ -154,15 +167,17 @@ const content = {
             },
             // {
             //     title: 'Type{Scripts}',
-            //     img: `${typeGIF}`,
+            //     video: `${typeGIF}`,
             //     git: 'https://github.com/Kam-Mivehchi/TypeScripts',
             //     live: 'https://typescripts-btc.herokuapp.com/',
             //     desc: "Type{Scripts} is a typing game for all developers, new and experienced alike where users are able to see their typing skills when typing code.We noticed that a lot of the typing quizes or games didn't offer developer modes where you can type code instead of randomwords and sentences and sought to provide a solution in the form of Typescripts. ",
             //     tech: ["JavaScript", "Handlebars", 'CSS', 'Bootstrap'],
             // },
             {
+                id: 'workoutWizard',
                 title: 'Workout Wizard',
-                img: `${workoutGIF}`,
+                video: `/projects/WorkoutWiz.gif`,
+                screenshot: "/screenshots/workout.webp",
                 git: 'https://github.com/Kam-Mivehchi/project-1',
                 live: 'https://runaariga.github.io/project-1/',
                 desc: "Application where the user is able to find a workout specifically to certain muscle groups.If the user selects a muscle group, application will provide a list of workouts and videos",
@@ -170,7 +185,7 @@ const content = {
             },
             // {
             //     title: 'Note Taker',
-            //     img: `${noteGIF}`,
+            //     video: `${noteGIF}`,
             //     git: 'https://github.com/Kam-Mivehchi/Note-Taker',
             //     live: 'https://notetaker-km.herokuapp.com/',
             //     desc: "Mobile-Resonsive Note taking application that integrates with Rest API. This application allows user to create, store and delete application to help increase productivity",
