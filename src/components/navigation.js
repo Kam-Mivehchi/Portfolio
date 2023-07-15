@@ -10,7 +10,7 @@ function Navigation() {
         <div className="navbar bg-transparent md:w-10/12 2xl:w-2/3 mx-auto pt-4 lg:pt-10">
             <a href="/" className="navbar-start">
 
-                <h2 className=" btn btn-wide flex btn-ghost normal-case text-2xl lg:text-3xl font-bold   text-white  w-max hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
+                <h2 className=" btn  flex btn-ghost normal-case text-2xl lg:text-3xl font-bold   text-white  w-max hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">{content.nav.firstName} <span className="text-accent ml-1">{content.nav.lastName}</span></h2>
 
             </a>
             <div className="navbar-end">
