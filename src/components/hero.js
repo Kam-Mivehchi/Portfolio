@@ -1,9 +1,6 @@
 import React, { lazy, useState } from 'react';
 
-
-import { Link } from 'react-scroll'
 import content from '../content';
-// import Spline from '@splinetool/react-spline';
 import { BsDisplay } from "react-icons/bs"
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -35,9 +32,9 @@ const Hero = () => {
                         <div className="flex flex-col gap-4 lg:flex-row">
 
 
-                            <Link to="portfolio" smooth={true} offset={-50} duration={100} delay={0}>
+                            <a href="portfolio" >
                                 <button className="btn   btn-accent text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-1000 ease-in-out animate-pulse" > Projects</button>
-                            </Link>
+                            </a>
                             <a href="https://calendly.com/kammivehchi/tutoring-web-development">
                                 <button className="btn   btn-primary    text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-1000 ease-in-out " >Tutoring</button>
                             </a>
