@@ -30,9 +30,9 @@ function Navigation() {
                                 )
                             }
                             return (
-                                <Link to={item.link} key={`${item.text}_mobile`} smooth={true} offset={25} duration={100} delay={0}>
+                                <a href={`#${item.link}`} key={`${item.text}_mobile`} smooth={true} offset={25} duration={100} delay={0}>
                                     <div className="btn btn-ghost w-full font-black">{item.text}</div>
-                                </Link>
+                                </a>
                             )
                         })}
 
@@ -50,10 +50,10 @@ function Navigation() {
                             )
                         }
                         return (
-                            <Link to={item.link} key={`${item.text}_desktop`} smooth={true} offset={25} duration={100} delay={0}>
+                            <a href={`#${item.link}`} key={`${item.text}_desktop`} >
 
                                 <button className="btn btn-ghost w-max font-black text-xl  hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-300 ease-in-out">{item.text}</button>
-                            </Link>
+                            </a>
                         )
                     })}
 

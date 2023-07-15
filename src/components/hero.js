@@ -1,9 +1,14 @@
-import { useState } from 'react'
+import React, { lazy, useState } from 'react';
+
+
 import { Link } from 'react-scroll'
 import content from '../content';
 // import Spline from '@splinetool/react-spline';
-import Contact from './contact'
 import { BsDisplay } from "react-icons/bs"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+const Contact = lazy(() => import('./contact'))
+
 const Hero = () => {
     const [openContact, setOpenContact] = useState(false);
     const { project } = content;
@@ -60,7 +65,7 @@ const Hero = () => {
                                             View
                                         </button>
                                     </div>
-                                    <img src={project.screenshot} alt={project.title} className="object-cover" height="288px" width="192px" />
+                                    <LazyLoadImage src={project.screenshot} alt={project.title} className="object-cover" height="288px" width="192px" />
                                 </a>
 
                             )

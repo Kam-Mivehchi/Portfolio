@@ -1,9 +1,9 @@
 import React from 'react'
-
-
 import content from '../content/index'
-import { LazyLoadImage, trackWindowScroll } from 'react-lazy-load-image-component';
-function Project({ proj, index, total, scrollPosition }) {
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
+
+function Project({ proj, index, total }) {
    return (
 
       < div className={`${index === 0 ? 'mt-4 lg:mt-12' : ''} p-4 lg:p-12 grid grid-cols-1 gap-2 lg:gap-4 lg:gap-x-12  relative md:w-10/12 2xl:w-2/3 lg:grid-cols-2 grid-flow-dense md:mx-auto   ${index < total - 1 ? `after:absolute  after:bottom-[-.5rem] after:left-1/2 after:translate-x-[-50%] after:content-[""] after:w-6/12 after:h-1 after:bg-gradient-to-r  ${index % 2 === 0 ? "after:from-accent after:to-white" : "after:from-white after:to-accent"} after:mx-auto after:rounded-full  lg:after:bottom-[-1.5rem]` : ''}  `} id={proj.id}>
@@ -30,7 +30,7 @@ function Project({ proj, index, total, scrollPosition }) {
             <div className=" border-2 border-white mx-auto rounded-xl overflow-hidden shadow-2xl shadow-white/30">
 
                <div >
-                  <LazyLoadImage className="" src={proj.video} alt={proj.title} loading="lazy" />
+                  <LazyLoadImage className="" src={proj.video} alt={proj.title} />
                </div>
             </div>
 
@@ -49,4 +49,4 @@ function Project({ proj, index, total, scrollPosition }) {
    )
 }
 
-export default trackWindowScroll(Project)
+export default Project
