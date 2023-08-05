@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './routes/home';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -9,19 +9,23 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Layout from './routes/root'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <App />
-
-    ),
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      }
+    ]
   },
   {
-    path: "about",
+    path: "skills",
     element: <div>About</div>,
   },
 ]);
