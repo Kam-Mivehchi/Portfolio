@@ -32,7 +32,7 @@ const Hero = () => {
                         <div className="flex flex-col gap-4 lg:flex-row">
 
 
-                            <a href="portfolio" >
+                            <a href="#portfolio" >
                                 <button className="btn   btn-accent text-lg  px-20 border-2 font-bold hover:animate-none  hover:bg-gradient-to-br hover:from-purple-400 hover:to-accent hover:scale-105 active:scale-95 transition-all duration-1000 ease-in-out animate-pulse" > Projects</button>
                             </a>
                             <a href="https://calendly.com/kammivehchi/tutoring-web-development">
