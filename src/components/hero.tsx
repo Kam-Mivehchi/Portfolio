@@ -1,9 +1,7 @@
-import React, { lazy, useState } from 'react';
+import { lazy, useState } from 'react';
 
 import content from '../content';
-import { BsDisplay } from 'react-icons/bs';
 // @ts-ignore
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Contact = lazy(() => import('./contact'));
 
@@ -13,11 +11,11 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero min-h-screen text-white overflow-hidden shadow-none relative ">
+      <div className=" min-h-screen text-white overflow-hidden shadow-none relative  grid place-content-center">
         {/* causing performance issues remove for now */}
         {/* <Spline scene="https://prod.spline.design/CBQ7gasxIh7OmHOb/scene.splinecode" className=" absolute top-[-23%]  lg:top-[-10%] scale-50 lg:scale-75 h-1/2 xl:scale-150 xl:top-[0%]" /> */}
 
-        <div className="hero-content  text-neutral-content  flex flex-col  w-screen gap-24">
+        <div className="  text-neutral-content  flex flex-col  w-screen gap-24">
           <div className="flex flex-col gap-4 items-center justify-center">
             <h1 className="text-7xl font-bold text-stone-300/1 opacity-100 text-center">
               Kamyar <span className="text-teal-500">Mivehchi</span>
@@ -48,7 +46,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="flex gap-12">
+          {/* <div className="flex gap-12">
             {project.data.map((project, i) => {
               return (
                 <a
@@ -76,9 +74,9 @@ const Hero = () => {
                 </a>
               );
             })}
-          </div>
+          </div> */}
         </div>
-        <Contact openContact={openContact} setOpenContact={setOpenContact} />
+        {/* <Contact openContact={openContact} setOpenContact={setOpenContact} /> */}
       </div>
     </>
   );
